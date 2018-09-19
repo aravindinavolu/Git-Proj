@@ -3,5 +3,7 @@
   hosts: 192.168.1.154 
 
   tasks:
-  - name: ping
-    win_ping:
+  - name: create files
+    win_file:
+     path: C:\Windows\19-09-2018_aravind
+     state: present 
